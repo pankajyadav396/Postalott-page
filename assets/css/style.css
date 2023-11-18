@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --fs-sm: 14px;
+    --fs-2sm: 16px;
+    --fs-md: 32px;
+
+    /* ----colors---- */
+    --color-white: #fff;
+    --color-white2: #fcfdff;
+    --color-black: #030712;
+    --color-gray1: #62656d;
+    --color-blue: #2563eb;
+    --color-gray2: #9197a6;
+    --color-bg-pass: #F5F8FF;
+    --color-border: #E4EAF7;
+}
+
+.ff-poppins {
+    font-family: 'poppins', 'sans-serif';
+}
+
+.ff-lato {
+    font-family: 'lato', 'sans-serif';
+}
+
+.color-white {
+    color: var(--color-white);
+}
+
+.color-white2 {
+    color: var(--color-white2);
+}
+
+.color-black {
+    color: var(--color-black);
+}
+
+.color-blue {
+    color: var(--color-blue);
+}
+
+.color-gray1 {
+    color: var(--color-gray1);
+}
+
+.color-gray2 {
+    color: var(--color-gray2);
+}
+
+.fs-sm {
+    font-size: var(--fs-sm);
+}
+
+.fs-2sm {
+    font-size: var(--fs-2sm);
+}
+
+.fs-md {
+    font-size: var(--fs-md);
+}
+
+
+
+/* -----------elements------------- */
+input {
+    border: none !important;
+    background-color: var(--color-bg-pass);
+}
+
+input:focus {
+    outline: none !important;
+}
+
+label {
+    width: 100% !important;
+}
+
+.bg-img {
+    background-image: url("../images/bg-img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-email {
+    background-color: var(--color-bg-pass) !important;
+    padding: 10px 16px;
+    border: 1px solid var(--color-border) !important;
+    border-radius: 6px;
+    max-width: 344px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.box-1 {
+    max-width: 344px;
+}
+
+.btn-sign {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 50px;
+    transition: .7s ease;
+    scale: 1;
+    background: linear-gradient(84deg, #2194FF 10.02%, #2563EB 90.05%) !important;
+
+}
+
+.btn-sign:focus {
+    scale: .9;
+}
+
+.btn-sign:hover {
+    background: linear-gradient(84deg, #2563EB 10.02%, #2194FF 90.05%) !important;
+}
+
+.line-hr {
+    width: 100px;
+}
+
+.mx-114 {
+    min-width: 115px;
+}
+
+.btn-google {
+    padding: 10px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    width: 49%;
+    transition: .3s ease-in-out;
+}
+
+.btn-google:hover {
+    box-shadow: 0px 2px 3px 0px rgba(2, 0, 00, 2);
+}
+
+.d_none {
+    display: none;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.blue-bg {
+    background-image: url("../images/blue-section-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.custom-container {
+    max-width: 1920px !important;
+    margin: 0 0 0 auto;
+    padding: 0 12px;
+}
+
+.img-pos {
+    top: 5%;
+    left: 71%;
+}
+
+.gap-50 {
+    gap: 30px;
+}
+
+.img-preloader {
+    animation-name: preloader;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.forget {
+    transition: .4s;
+}
+
+.resister:hover {
+    text-decoration: underline;
+}
+
+.forget:hover {
+    color: var(--color-blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.img-icon {
+    transition: .3s;
+}
+
+.img-icon:hover {
+    scale: .9;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+@media (min-width:992px) {
+    .vh-lg-100 {
+        min-height: 100vh;
+    }
+}
+
+@media (min-width:576px) {
+    .gap-sm-172 {
+        gap: 172px !important;
+    }
+
+    .gap-2r {
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width:576px) {
+    .box-1 {
+        max-width: 293px;
+
+    }
+
+    .img-icon {
+        width: 50px;
+    }
+
+    .gap-32 {
+        gap: 32px;
+    }
+}
+
+@keyframes preloader {
+    0% {
+        scale: 0.7;
+    }
+
+    25% {
+        scale: 1.3;
+    }
+
+    50% {
+        scale: .7;
+    }
+
+    75% {
+        scale: 1.3;
+    }
+
+    100% {
+        scale: 0.7;
+    }
+}
